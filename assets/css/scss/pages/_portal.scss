@@ -1,0 +1,112 @@
+.portal {
+  .left {
+    background-color: #1a1919;
+    height: $contentHeight;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+    .add-portal {
+      background-color: var(--second-color);
+      border: 4px solid transparent;
+      &:focus {
+        border-color: #fff;
+      }
+    }
+    .portal-list {
+      .portal-li {
+        position: relative;
+        border-radius: 15px;
+        border: 4px solid transparent;
+        background-color: var(--second-color);
+        .ellipse {
+          position: absolute;
+          left: 10px;
+          top: 10px;
+        }
+        // &.active {
+        //   border-color: #fff;
+        // }
+        &:focus {
+          border-color: #fff;
+        }
+        &.focused {
+          border-color: #fff;
+        }
+      }
+    }
+  }
+  .right {
+    background-color: #010101;
+    height: $contentHeight;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+    .portal-info {
+      width: 60%;
+      margin: auto;
+      .logo {
+        width: 280px;
+      }
+      .form-inputs {
+        .input-group {
+          border-bottom: 3px solid #fff;
+          border-radius: 0;
+          height: 100px;
+          .input-group-text {
+            background-color: #1a1a1a;
+            border: none;
+            border-radius: 0;
+            img {
+              width: 30px;
+            }
+          }
+          .form-control {
+            background-color: #1a1a1a;
+            border: none;
+            color: #fff;
+            height: 100%;
+            font-size: 25px;
+            &:focus {
+              box-shadow: none;
+              & ~ .float-label {
+                color: var(--second-color) !important;
+                opacity: 1;
+                font-size: 25px;
+              }
+            }
+          }
+          .float-label {
+            left: 65px;
+            z-index: 20;
+            font-size: 25px;
+            // color: var(--second-color) !important;
+          }
+        }
+        .uid {
+          background-color: #1a1a1a;
+          border-bottom: 3px solid #fff;
+        }
+      }
+      .buttons-collection {
+        button {
+          background-color: var(--second-color);
+          min-width: 225px;
+          border: 4px solid transparent;
+          &:focus {
+            border-color: #fff;
+          }
+          img {
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.img-btn {
+  width: 20px;
+  margin-top: -6px;
+}

@@ -1,0 +1,14 @@
+:root {
+  --main-color: #090909;
+  --second-color: #b6012c;
+}
+
+.main-bg-color {
+  background-color: var(--main-color);
+}
+
+.second-bg-color {
+  background-color: var(--second-color);
+}
+
+$contentHeight: calc(100vh - 145px);

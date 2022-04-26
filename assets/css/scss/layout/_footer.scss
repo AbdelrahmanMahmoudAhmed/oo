@@ -1,0 +1,32 @@
+.footer {
+  background-color: #262626;
+  color: #d4d4d4;
+  min-height: 70px;
+  .footer-list {
+    list-style: none;
+    .list-li {
+      .color {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        margin-bottom: -2px;
+        margin-right: 3px;
+      }
+      .settings-color {
+        background-color: #ff9900;
+      }
+      .live-color {
+        background-color: #ff0000;
+      }
+      .movies-color {
+        background-color: #0088ff;
+      }
+      .series-color {
+        background-color: #08b508;
+      }
+      .fav {
+        margin-top: -3px;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.series {
+  background-color: #010101;
+  height: $contentHeight;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  .series-card {
+    height: 345px;
+    background-color: #0f0c0d;
+    position: relative;
+    .series-body {
+      position: relative;
+      .series-img {
+        width: 100%;
+        height: 82%;
+      }
+      // .series-progress {
+      //   width: 100%;
+      //   height: 3px;
+      //   position: absolute;
+      //   background-color: var(--second-color);
+      //   bottom: 5px;
+      // }
+    }
+    .series-title {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      font-size: 20px;
+    }
+    .series-padge {
+      position: absolute;
+      top: 20px;
+      right: 0;
+      background-color: var(--second-color);
+      color: #fff;
+      border-top-left-radius: 25px;
+    }
+    .parent-series-progress {
+      width: 90%;
+      margin-left: 5%;
+      .series-progress {
+        height: 6px;
+        background-color: var(--second-color);
+        bottom: 5px;
+      }
+    }
+  }
+}

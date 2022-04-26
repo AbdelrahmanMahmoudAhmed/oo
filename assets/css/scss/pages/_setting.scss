@@ -1,0 +1,70 @@
+.setting {
+  height: $contentHeight;
+  background-image: url(~/assets/images/bg.svg);
+  background-size: cover;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 30px 50px;
+  .settings {
+    width: 67%;
+    max-width: 1220px;
+    .setting-card {
+      background-color: #151315;
+      width: 280px;
+      height: 280px;
+      border-radius: 10px;
+      .item {
+        border-radius: inherit;
+      }
+    }
+    .setting-card.active {
+      background-color: var(--second-color);
+    }
+  }
+}
+.item {
+  &:focus {
+    background-color: var(--second-color);
+  }
+}
+.our-modal {
+  background-color: #151314;
+  border-radius: 25px;
+  .our-input {
+    background-color: #151314;
+    &::placeholder {
+      color: #fff !important;
+      margin-left: 15px;
+    }
+  }
+  .our-input.active {
+    background-color: #2f2d2e;
+  }
+  .modal-footer {
+    button {
+      border: 4px solid transparent;
+
+      &:focus {
+        border-color: #fff;
+      }
+    }
+    button.active {
+      background-color: var(--second-color);
+    }
+  }
+  .modal-footer:focus {
+    box-shadow: none;
+  }
+  .player-list {
+    .player-li {
+      cursor: pointer;
+      .check-img {
+        width: 30px;
+      }
+    }
+    .player-li.active {
+      background-color: #2f2d2e;
+    }
+  }
+}

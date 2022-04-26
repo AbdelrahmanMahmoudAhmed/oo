@@ -1,0 +1,59 @@
+.season {
+  height: $contentHeight;
+  // background-image: url(~/assets/images/bg.svg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 30px 50px;
+  #carousel-fade {
+    #carousel-fade___BV_inner_ {
+      height: 100%;
+      .c-poster {
+        img {
+          height: 100%;
+          // object-fit: cover;
+        }
+      }
+    }
+  }
+  .poster {
+    height: 60%;
+    width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .imdb {
+    width: 70px;
+    height: 40px;
+  }
+  .play {
+    background-color: var(--second-color);
+    width: 230px;
+    img {
+      width: 35px;
+      margin-top: -5px;
+    }
+  }
+  .trailer {
+    background-color: var(--second-color);
+    width: 230px;
+    img {
+      width: 35px;
+      margin-top: -5px;
+    }
+  }
+  .season-link {
+    background-color: #fff;
+    border-radius: 3px !important;
+    display: block;
+    width: 200px;
+    height: 58px;
+  }
+  .season-link.active {
+    border: 5px solid var(--second-color);
+  }
+}

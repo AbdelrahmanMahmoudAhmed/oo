@@ -1,0 +1,136 @@
+.live-lists {
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  .live-channel {
+    height: $contentHeight;
+    background-color: #201c1e;
+    opacity: 0.95;
+    .live-m-head {
+      border-bottom: 2px solid var(--second-color);
+    }
+    .live-list {
+      list-style: none;
+      background-color: #201c1e;
+      outline: none;
+      border: 0;
+      .live-li {
+        .channel-link {
+          color: #fff;
+          text-decoration: none;
+          .color-box {
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+          }
+          .live-name {
+            span {
+              font-size: 10px;
+            }
+          }
+          .all-progress {
+            background-color: #373737;
+            height: 5px;
+            width: 50px;
+            position: relative;
+            span {
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 100%;
+              background-color: #fff;
+            }
+          }
+          .name-container {
+            // margin-right: 135px;
+            width: 65%;
+            .name {
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+              font-size: 25px;
+            }
+            .next {
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+              width: 90%;
+              margin: 0 auto;
+              color: #d4d4d4;
+            }
+          }
+        }
+        &:focus {
+          background: rgb(182, 1, 44);
+          background: linear-gradient(
+            90deg,
+            rgba(182, 1, 44, 1) 0%,
+            rgba(145, 1, 35, 1) 64%,
+            rgba(91, 1, 22, 1) 100%
+          );
+        }
+      }
+      .live-li.active {
+        background: rgb(182, 1, 44);
+        background: linear-gradient(
+          90deg,
+          rgba(182, 1, 44, 1) 0%,
+          rgba(145, 1, 35, 1) 64%,
+          rgba(91, 1, 22, 1) 100%
+        );
+      }
+    }
+  }
+}
+
+.show-live {
+  background-color: #090909;
+  height: $contentHeight;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+  a {
+    text-decoration: none;
+    .player {
+      width: calc(100% - 20px);
+      height: 350px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .kill {
+      color: #e1e1e1;
+    }
+    .time {
+      color: #656565 !important;
+    }
+    .progress-container {
+      width: calc(100% - 20px) !important;
+      .progress {
+        height: 4px;
+        width: 80%;
+        background-color: #373737;
+        position: relative;
+        span {
+          position: absolute;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-color: #b6012c;
+        }
+      }
+    }
+    .time-left {
+      color: #373737 !important;
+      font-weight: bold;
+    }
+    .info {
+      color: #656565 !important;
+      font-size: 14px;
+      width: 80%;
+    }
+  }
+}
